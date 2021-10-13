@@ -1,0 +1,1124 @@
+/* COMMON */
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapped {
+    width: var(--wrapped-width);
+}
+
+:root {
+    --header-height: 6.07rem;
+    --wrapped-width: 50vw;
+    --video-width: calc(var(--wrapped-width) - 10vw);
+    --section-padding: 10vh;
+    --section-footer-padding: 5vh;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+/* STYLE */
+
+html {
+    font-size: 14px;
+}
+
+body {
+    display: block;
+    background-color: #050814;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    height: var(--header-height);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(5, 8, 20, 0.8);
+    z-index: 999;
+}
+
+.header .wrapped {
+    position: relative;
+}
+
+.header-logo-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.header-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.86rem;
+    margin: 0;
+    padding: 1.43rem;
+}
+
+.header-menu-list li {
+    list-style-type: none;
+}
+
+.header-menu-list li a:hover {
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
+}
+
+.header-menu-list li a {
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100%;
+    list-style-type: none;
+    font-size: 1.214rem;
+    opacity: 0.75;
+    font-weight: 400;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in;
+}
+
+.logo {
+    position: absolute;
+    background-image: url(assets/logo.png);
+    background-size: 100% 100%;
+    width: 3.43rem;
+    height: 3.43rem;
+    cursor: pointer;
+}
+
+.home-background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+    background: url(assets/background.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.home-content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.home-welcome h1 {
+    color: white;
+    text-align: center;
+    font-size: 5.1rem;
+    font-weight: 900;
+    line-height: 5rem;
+    letter-spacing: 0.05rem;
+    padding: 0;
+    margin: 0;
+    white-space: pre-line;
+    margin-top: calc(50vh - var(--header-height) - 10vh);
+}
+
+.home-welcome h2 {
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-top: 2.28rem;
+    font-size: 1.71rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    opacity: 0.5;
+}
+
+.home-welcome-buttons {
+    display: flex;
+    margin-top: 3.43rem;
+    gap: 1.43rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-welcome-store {
+    width: 14.28rem;
+    height: 3.57rem;
+    background-image: url(assets/download_mac_store.svg);
+    background-size: 100% 100%;
+}
+
+.home-welcome-github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.29rem;
+    border-radius: 0.71rem;
+    border: 0.1rem solid #ffffff;
+    text-decoration: none;
+}
+
+.home-welcome-github-image {
+    width: 2.28rem;
+    height: 2.28rem;
+    margin: 0.71rem 0.71rem 0.71rem 1.14rem;
+    background-image: url(assets/github.png);
+    background-size: 100% 100%;
+}
+
+.home-welcome-github h2 {
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    margin-right: 1.14rem;
+    font-size: 1.21rem;
+    font-weight: 500;
+}
+
+.home-gradient {
+    width: 100vw;
+    background-image: linear-gradient(180deg, rgba(5,8,20,0.00) 0%, #050814 15%, #050814 100%);
+}
+
+.home-video-wrapper {
+    padding-top: 11.43rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.home-video {
+    width: var(--video-width);
+    height: 100%;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.home-video-replay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.71rem;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 1.79rem;
+    margin-top: 1.43rem;
+    margin-bottom: 20vh;
+    cursor: pointer;
+}
+
+.home-video-replay-image {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.71rem 0.71rem 0.71rem 1.14rem;
+    background-image: url(assets/replay.svg);
+    background-size: 100% 100%;
+    opacity: 0.5;
+}
+
+.home-video-replay h2 {
+    margin: 0.71rem 1.14rem 0.71rem 0rem;
+    font-size: 1.07rem;
+    font-weight: 400;
+    opacity: 0.5;
+    padding: 0;
+    color: white;
+}
+
+.section-divider {
+    width: 100%;
+    height: 0.86rem;
+    background-color: black;
+}
+
+.features {
+    padding: var(--section-padding) 0rem;
+    background-color: #05070C;
+}
+
+.features-flex-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4.57rem;
+}
+
+.wallpaper-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.29rem;
+    height: calc(var(--wrapped-width) / 2);
+}
+
+.wallpaper-flex-solar {
+    background-image: url(assets/solar.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+    width: 50%;
+    height: 100%;
+}
+
+.wallpaper-flex-solar-content {
+    padding: 3.43rem 2.29rem;
+}
+
+.wallpaper-flex-solar-content h3 {
+    font-size: 1.07rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+    color: #5856D6;
+}
+
+.wallpaper-flex-solar-content h1 {
+    margin-top: 2.29rem;
+    font-size: 2.28rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    color: white;
+}
+
+.wallpaper-flex-solar-content h2 {
+    font-size: 1.21rem;
+    margin-top: 1.14rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    line-height: 1.6rem;
+    color: white;
+    opacity: 0.75;
+    white-space: pre-line;
+}
+
+.wallpaper-solar-squad-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.29rem;
+    width: 50%;
+    height: 100%;
+}
+
+.wallpaper-solar-duo-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.29rem;
+    width: 100%;
+    height: 50%;
+}
+
+.wallpaper-solar-duo-flex-content {
+    padding: 2.29rem;
+}
+
+.wallpaper-solar-description {
+    width: 50%;
+    height: 100%;
+    background-image: url(assets/solar-1.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+}
+
+.wallpaper-solar-duo-solar-icon {
+    width: 2.86rem;
+    height: 2.86rem;
+    background-image: url(assets/solar-icon.svg);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.wallpaper-solar-duo-flex-content h1 {
+    font-size: 1.93rem;
+    margin-top: 2.57rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    line-height: 1.6rem;
+    color: white;
+}
+
+.wallpaper-solar-duo-flex-content h3 {
+    font-size: 1.07rem;
+    margin-top: 1.14rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    line-height: 1.6rem;
+    color: white;
+    opacity: 0.75;
+}
+
+.wallpaper-time-duo-flex-content {
+    padding: 2.29rem;
+}
+
+.wallpaper-time-description {
+    width: 50%;
+    height: 100%;
+    background-image: url(assets/solar-2.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+}
+
+.wallpaper-time-duo-time-icon {
+    width: 2.86rem;
+    height: 2.86rem;
+    background-image: url(assets/time-icon.svg);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.wallpaper-time-duo-flex-content h1 {
+    font-size: 1.93rem;
+    margin-top: 2.57rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    line-height: 1.6rem;
+    color: white;
+}
+
+.wallpaper-time-duo-flex-content h3 {
+    font-size: 1.07rem;
+    margin-top: 1.14rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    line-height: 1.6rem;
+    color: white;
+    opacity: 0.75;
+}
+
+.wallpaper-appearance-duo-flex-content {
+    padding: 2.29rem;
+}
+
+.wallpaper-appearance-duo-appearance-icon {
+    width: 2.86rem;
+    height: 2.86rem;
+    background-image: url(assets/appearance-icon.svg);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.wallpaper-appearance-duo-flex-content h1 {
+    font-size: 1.93rem;
+    margin-top: 2.57rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    line-height: 1.6rem;
+    color: white;
+}
+
+.wallpaper-appearance-duo-flex-content h3 {
+    font-size: 1.07rem;
+    margin-top: 1.14rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    line-height: 1.6rem;
+    color: white;
+    opacity: 0.75;
+}
+
+.wallpaper-appearance-description {
+    width: 50%;
+    height: 100%;
+    background-image: url(assets/solar-3.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+}
+
+.wallpaper-graphic-duo-flex-content {
+    padding: 2.29rem;
+}
+
+.wallpaper-graphic-description {
+    width: 50%;
+    height: 100%;
+    background-image: url(assets/solar-4.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+}
+
+.wallpaper-graphic-duo-flex-content h1 {
+    font-size: 1.93rem;
+    margin-top: 1.14rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    line-height: 1.6rem;
+    color: white;
+}
+
+.calculator-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.57rem;
+    gap: 2.29rem;
+    height: calc(var(--wrapped-width) / 2);
+}
+
+.calculator-make-flex-content {
+    padding: 3.43rem 2.29rem;
+}
+
+.calculator-make-flex {
+    background-color: black;
+    background-image: url(assets/calculator.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
+.calculator-make-flex-content h3 {
+    font-size: 1.07rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+    color: #FF9500;
+}
+
+.calculator-make-flex-content h1 {
+    margin-top: 2.29rem;
+    font-size: 2.28rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    color: white;
+}
+
+.calculator-make-flex-content h2 {
+    font-size: 1.21rem;
+    margin-top: 1.14rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    line-height: 1.6rem;
+    color: white;
+    opacity: 0.75;
+    white-space: pre-line;
+}
+
+.calculator-duo-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.29rem;
+    width: 50%;
+    height: 100%;
+}
+
+.calculator-location {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url(assets/location.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.calculator-location-content {
+    padding: 2.29rem;
+}
+
+.calculator-location-content-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(assets/location.svg);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.calculator-location-content h1 {
+    margin-top: 1.14rem;
+    font-size: 1.92rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    color: white;
+}
+
+.calculator-drag {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url(assets/drag.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.calculator-drag-content {
+    padding: 2.29rem;
+}
+
+.calculator-drag-content-icon {
+    width: 2.5rem;
+    height: 1.43rem;
+    background-image: url(assets/drag.svg);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.calculator-drag-content h1 {
+    margin-top: 1.14rem;
+    font-size: 1.92rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    color: white;
+}
+
+.creation-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.57rem;
+    gap: 2.29rem;
+    height: calc(var(--wrapped-width) / 2);
+}
+
+.creation-express-flex {
+    background-image: url(assets/creation.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+    width: 50%;
+    height: 100%;
+}
+
+.creation-express-flex-content {
+    padding: 3.43rem 2.29rem;
+}
+
+.creation-express-flex-content h3 {
+    font-size: 1.07rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+    background: #FBDA61;
+    background: linear-gradient(to right, #FBDA61 0%, #FF5ACD 100%);
+    -webkit-background-clip: text;
+    width: fit-content;
+    -webkit-text-fill-color: transparent;
+}
+
+.creation-express-flex-content h1 {
+    margin-top: 2.29rem;
+    font-size: 2.28rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    color: white;
+}
+
+.creation-express-flex-content h2 {
+    font-size: 1.21rem;
+    margin-top: 1.14rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    line-height: 1.6rem;
+    color: white;
+    opacity: 0.75;
+    white-space: pre-line;
+}
+
+.creation-duo-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.29rem;
+    width: 50%;
+    height: 100%;
+}
+
+.creation-desktop {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url(assets/desktop.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.creation-desktop-content {
+    padding: 2.29rem;
+}
+
+.creation-desktop-content h1 {
+    font-size: 1.93rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    line-height: 1.6rem;
+    color: white;
+}
+
+.creation-desktop-content h3 {
+    font-size: 1.07rem;
+    margin-top: 0.86rem;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    line-height: 1.6rem;
+    color: white;
+    opacity: 0.75;
+}
+
+.creation-share {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url(assets/share.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.creation-share-content {
+    padding: 2.29rem;
+}
+
+.creation-share-content-icon {
+    width: 1.79rem;
+    height: 2.5rem;
+    background-image: url(assets/share.svg);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.creation-share-content h1 {
+    margin-top: 1.14rem;
+    font-size: 1.92rem;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    color: white;
+}
+
+.started {
+    background-color: #0D0E11;
+    padding: var(--section-padding) 0;
+}
+
+.started-container {
+    background-color: black;
+    background-image: url(assets/started-background.png);
+    background-size: cover;
+    padding: 4.57rem 0rem 4.57rem 7.14rem;
+}
+
+.started-container h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 2.285rem;
+    letter-spacing: 0.04rem;
+    padding-top: 2.29rem;
+}
+
+.started-container h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.43rem;
+    letter-spacing: 0.02rem;
+    opacity: 0.5;
+    padding-top: 0.57rem;
+}
+
+.started-buttons {
+    display: flex;
+    margin-top: 3.43rem;
+    gap: 1.43rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.started-store {
+    width: 14.29rem;
+    height: 3.57rem;
+    background-image: url(assets/download_mac_store.svg);
+    background-size: 100% 100%;
+}
+
+.started-github {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3.29rem;
+    border-radius: 0.71rem;
+    border: 0.1rem solid #ffffff;
+    text-decoration: none;
+}
+
+.started-github-image {
+    width: 2.29rem;
+    height: 2.29rem;
+    margin: 0.71rem 0.71rem 0.71rem 1.14rem;
+    background-image: url(assets/github.png);
+    background-size: 100% 100%;
+}
+
+.started-github h3 {
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    margin-right: 1.14rem;
+    font-size: 1.21rem;
+    font-weight: 500;
+    color: white;
+}
+
+.started-logo {
+    width: 9.14rem;
+    height: 9.14rem;
+    background-image: url(assets/logo.png);
+    background-size: cover;
+}
+
+.footer {
+    background-color: #040404;
+    padding: var(--section-footer-padding) 0;
+}
+
+.footer-rows {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.footer-rows ul li:first-child {
+    font-size: 1.214rem;
+    font-weight: 600;
+    opacity: 0.75;
+    color: white;
+    padding-bottom: 0.79rem;
+}
+
+.footer-rows ul {
+    list-style-type: none;
+}
+
+.footer-rows ul li {
+    font-size: 1.214rem;
+    font-weight: 400;
+    opacity: 0.5;
+    color: white;
+    padding: 0.36rem;
+}
+
+.footer h3 {
+    margin-top: 4.57rem;
+    color: white;
+    opacity: 0.25;
+    font-size: 1.07rem;
+    font-weight: 400;
+    letter-spacing: 0.015rem;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --wrapped-width: 100vw;
+        --video-width: 100vw;
+        --header-height: 5rem;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+    }
+
+    .header-menu-list {
+        visibility: hidden;
+    }
+
+    .home-welcome h1 {
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 4rem;
+        letter-spacing: 0.05rem;
+        margin-top: calc(50vh - var(--header-height) - 15vh);
+        padding: 0 1rem;
+    }
+    
+    .home-welcome h2 {
+        margin-top: 2.28rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: 0.02rem;
+        padding: 0 1rem;
+    }
+
+    .home-welcome-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .home-welcome-buttons h2 {
+        margin-top: 0;
+    }
+
+    .home-video-replay {
+        margin-bottom: 10vh;
+    }
+
+    .home-video-replay h2 {
+        margin-top: 0.71rem;
+        padding: 0;
+        font-size: 1.07rem;
+    }
+
+    .home-welcome-github h2 {
+        padding: 0;
+    }
+
+    .home-video-wrapper {
+        padding-top: 5rem;
+    }
+
+    .wallpaper-flex {
+        flex-direction: column;
+        gap: 0;
+        height: calc(100vw * 6);
+    }
+    
+    .wallpaper-solar-squad-flex {
+        width: 100%;
+        gap: 0;
+    }
+
+    .wallpaper-solar-duo-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .wallpaper-flex-solar {
+        width: 100%;
+        height: 100vw * 2;
+    }
+
+    .wallpaper-solar-description {
+        width: 100%;
+        height: 100vw;
+    }
+
+    .wallpaper-time-description {
+        width: 100%;
+        height: 100vw;
+    }
+
+    .wallpaper-appearance-description {
+        width: 100%;
+        height: 100vw;
+    }
+
+    .wallpaper-graphic-description {
+        width: 100%;
+        height: 100vw;
+    }
+
+    .calculator-flex {
+        flex-direction: column;
+        gap: 0;
+        height: calc(100vw * 3);;
+    }
+
+    .calculator-make-flex {
+        width: 100%;
+    }
+
+    .calculator-duo-flex {
+        width: 100%;
+        gap: 0;
+    }
+
+    .creation-flex {
+        flex-direction: column;
+        gap: 0;
+        height: calc(100vw * 3);;
+    }
+
+    .creation-express-flex {
+        width: 100%;
+    }
+
+    .creation-duo-flex {
+        width: 100%;
+        gap: 0;
+    }
+
+    .started-container {
+        padding: 2.285rem 3.57rem 2.285rem 3.57rem;
+    }
+
+    .started-buttons {
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .footer-rows {
+        justify-content: flex-start;
+    }
+
+    .footer-rows ul:first-child {
+        display: none;
+    }
+
+    .footer-rows ul:nth-child(2) {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    :root {
+        --wrapped-width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    :root {
+        --wrapped-width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    :root {
+        --wrapped-width: 55vw;
+    }
+}
+
+@media only screen and (min-width: 3840px) {
+    :root {
+        --wrapped-width: 50vw;
+    }
+}
+
+/* TRANSITIONS */
+
+[data-inviewport="scale-in"] { 
+    transition: 2s;
+    transform: scale(0.1);
+}
+
+[data-inviewport="scale-in"].is-inViewport { 
+    transform: scale(1);
+}
+
+[data-inviewport="fade"] { 
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+[data-inviewport="fade"].is-inViewport { 
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
