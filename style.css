@@ -26,6 +26,16 @@
     --section-footer-padding: 5vh;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #050814;
+  }
+  
+::selection {
+    color: white;
+    background: #050814;
+}
+
 h1 {
     padding: 0;
     margin: 0;
@@ -142,6 +152,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    opacity: 0;
 }
 
 .home-content {
@@ -151,6 +162,11 @@ body {
     left: 0;
     right: 0;
     text-align: center;
+}
+
+.home-welcome {
+    opacity: 0;
+    transform: translateY(3rem);
 }
 
 .home-welcome h1 {
@@ -174,7 +190,6 @@ body {
     font-size: 1.71rem;
     font-weight: 400;
     letter-spacing: 0.02rem;
-    opacity: 0.5;
 }
 
 .home-welcome-buttons {
@@ -189,7 +204,12 @@ body {
     width: 14.28rem;
     height: 3.57rem;
     background-image: url(assets/download_mac_store.svg);
-    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .home-welcome-github {
@@ -200,6 +220,17 @@ body {
     border-radius: 0.71rem;
     border: 0.1rem solid #ffffff;
     text-decoration: none;
+    transform: translateY(0rem);
+}
+
+.home-welcome-github:hover h2 {
+    transition: opacity 0.2s ease-in;
+    opacity: 0.75;
+}
+
+.home-welcome-github:hover .home-welcome-github-image {
+    transition: opacity 0.2s ease-in;
+    opacity: 0.75;
 }
 
 .home-welcome-github-image {
@@ -208,6 +239,8 @@ body {
     margin: 0.71rem 0.71rem 0.71rem 1.14rem;
     background-image: url(assets/github.png);
     background-size: 100% 100%;
+    transition: opacity 0.2s ease-in;
+    opacity: 1;
 }
 
 .home-welcome-github h2 {
@@ -217,6 +250,8 @@ body {
     margin-right: 1.14rem;
     font-size: 1.21rem;
     font-weight: 500;
+    transition: opacity 0.2s ease-in;
+    opacity: 1;
 }
 
 .home-gradient {
@@ -246,7 +281,7 @@ body {
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 1.79rem;
     margin-top: 1.43rem;
-    margin-bottom: 20vh;
+    margin-bottom: 12vh;
     cursor: pointer;
 }
 
@@ -782,7 +817,7 @@ body {
 }
 
 .creation-share-content-icon {
-    width: 1.79rem;
+    width: 2rem;
     height: 2.5rem;
     background-image: url(assets/share.svg);
     background-position: center center;
@@ -842,7 +877,12 @@ body {
     width: 14.29rem;
     height: 3.57rem;
     background-image: url(assets/download_mac_store.svg);
-    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .started-github {
@@ -906,9 +946,22 @@ body {
 .footer-rows ul li {
     font-size: 1.214rem;
     font-weight: 400;
-    opacity: 0.5;
     color: white;
     padding: 0.36rem;
+}
+
+.footer-rows ul li a {
+    font-size: 1.214rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.15s ease-in;
+    opacity: 0.5;
+}
+
+.footer-rows ul li a:hover {
+    transition: opacity 0.15s ease-in;
+    opacity: 0.75;
 }
 
 .footer h3 {
@@ -1105,21 +1158,13 @@ body {
 
 /* TRANSITIONS */
 
-[data-inviewport="scale-in"] { 
-    transition: 2s;
-    transform: scale(0.1);
-}
-
-[data-inviewport="scale-in"].is-inViewport { 
-    transform: scale(1);
-}
-
-[data-inviewport="fade"] { 
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
-}
-
 [data-inviewport="fade"].is-inViewport { 
-    transition: opacity 1s ease-in-out;
+    transition: opacity 2s ease-in-out;
+    opacity: 1;
+}
+
+[data-inviewport="translate-welcome"].is-inViewport { 
+    transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
+    transform: translateY(0);
     opacity: 1;
 }
