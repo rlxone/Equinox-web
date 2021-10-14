@@ -17,3 +17,12 @@ const viewPorts = document.querySelectorAll('[data-inviewport]');
 viewPorts.forEach(EL => {
     obs.observe(EL, obsOptions);
 });
+
+var video = document.getElementsByClassName('home-video')[0];
+var replayDiv = document.getElementsByClassName('home-video-replay')[0];
+
+replayDiv.onclick = function () {
+  video.pause();
+  video.currentTime = '0';
+  video.play();
+};

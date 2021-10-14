@@ -190,6 +190,7 @@ body {
     font-size: 1.71rem;
     font-weight: 400;
     letter-spacing: 0.02rem;
+    opacity: 0.5;
 }
 
 .home-welcome-buttons {
@@ -252,6 +253,12 @@ body {
     font-weight: 500;
     transition: opacity 0.2s ease-in;
     opacity: 1;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 .home-gradient {
@@ -273,6 +280,26 @@ body {
     border-radius: 0.7142857143rem;
     border: 0.1rem solid rgba(255,255,255,0.20);
     box-shadow: 0 0 1px 1px #000000, 0 36px 100px 0 rgba(0,0,0,0.70);
+}
+
+.home-window-title h2 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: calc(var(--video-width) * 0.03837953092 * 0.35);
+    cursor: default;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    opacity: 1;
 }
 
 .home-window-title {
@@ -310,19 +337,6 @@ body {
     border-radius: 50%;
 }
 
-.home-window-title h2 {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: calc(var(--video-width) * 0.03837953092 * 0.4);
-    cursor: default;
-}
-
 .home-window-buttons div:nth-child(3) {
     aspect-ratio: 1;
     height: 34.28571429%;
@@ -346,9 +360,15 @@ body {
     height: 2.71rem;
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 1.79rem;
-    margin-top: 1.43rem;
+    margin-top: 3rem;
     margin-bottom: 12vh;
     cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+.home-video-replay:hover {
+    transition: background-color 0.2s ease-in;
+    background-color: rgba(255, 255, 255, 0.12);
 }
 
 .home-video-replay-image {
@@ -367,6 +387,12 @@ body {
     opacity: 0.5;
     padding: 0;
     color: white;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 .section-divider {
@@ -959,6 +985,12 @@ body {
     border-radius: 0.71rem;
     border: 0.1rem solid #ffffff;
     text-decoration: none;
+    opacity: 1;
+}
+
+.started-github:hover h3 {
+    transition: opacity 0.2s ease-in;
+    opacity: 0.75;
 }
 
 .started-github-image {
@@ -967,6 +999,13 @@ body {
     margin: 0.71rem 0.71rem 0.71rem 1.14rem;
     background-image: url(assets/github.png);
     background-size: 100% 100%;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+
+.started-github:hover .started-github-image {
+    transition: opacity 0.2s ease-in;
+    opacity: 0.75;
 }
 
 .started-github h3 {
@@ -977,6 +1016,8 @@ body {
     font-size: 1.21rem;
     font-weight: 500;
     color: white;
+    transition: opacity 0.2s ease-in;
+    opacity: 1;
 }
 
 .started-logo {
@@ -1089,6 +1130,26 @@ body {
         margin-bottom: 10vh;
     }
 
+    .home-window-title h2 {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: calc(var(--video-width) * 0.03837953092 * 0.35);
+        cursor: default;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        opacity: 1;
+    }
+
     .home-video-replay h2 {
         margin-top: 0.71rem;
         padding: 0;
@@ -1105,18 +1166,18 @@ body {
 
     .wallpaper-flex {
         flex-direction: column;
-        gap: 0;
+        gap: 1rem;
         height: calc(100vw * 6);
     }
     
     .wallpaper-solar-squad-flex {
         width: 100%;
-        gap: 0;
+        gap: 1rem;
     }
 
     .wallpaper-solar-duo-flex {
         flex-direction: column;
-        gap: 0;
+        gap: 1rem;
     }
 
     .wallpaper-flex-solar {
@@ -1146,7 +1207,7 @@ body {
 
     .calculator-flex {
         flex-direction: column;
-        gap: 0;
+        gap: 1rem;
         height: calc(100vw * 3);;
     }
 
@@ -1156,12 +1217,12 @@ body {
 
     .calculator-duo-flex {
         width: 100%;
-        gap: 0;
+        gap: 1rem;
     }
 
     .creation-flex {
         flex-direction: column;
-        gap: 0;
+        gap: 1rem;
         height: calc(100vw * 3);;
     }
 
@@ -1171,7 +1232,7 @@ body {
 
     .creation-duo-flex {
         width: 100%;
-        gap: 0;
+        gap: 1rem;
     }
 
     .started-container {
@@ -1225,12 +1286,12 @@ body {
 /* TRANSITIONS */
 
 [data-inviewport="fade"].is-inViewport { 
-    transition: opacity 2s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
     opacity: 1;
 }
 
 [data-inviewport="translate-welcome"].is-inViewport { 
-    transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.8s ease-in-out;
     transform: translateY(0);
     opacity: 1;
 }
