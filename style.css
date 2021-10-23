@@ -147,7 +147,7 @@ body {
     height: 100vh;
     position: absolute;
     background-size: cover;
-    background: url(assets/background.png) no-repeat center center; 
+    background: url(assets/background.jpg) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -423,7 +423,7 @@ body {
 }
 
 .wallpaper-flex-solar {
-    background-image: url(assets/solar.png);
+    background-image: url(assets/solar.jpg);
     background-position: center center;
     background-repeat: no-repeat; 
     -webkit-background-size: cover;
@@ -491,7 +491,7 @@ body {
 .wallpaper-solar-description {
     width: 50%;
     height: 100%;
-    background-image: url(assets/solar-1.png);
+    background-image: url(assets/solar-1.jpg);
     background-position: center center;
     background-repeat: no-repeat; 
     -webkit-background-size: cover;
@@ -539,7 +539,7 @@ body {
 .wallpaper-time-description {
     width: 50%;
     height: 100%;
-    background-image: url(assets/solar-2.png);
+    background-image: url(assets/solar-2.jpg);
     background-position: center center;
     background-repeat: no-repeat; 
     -webkit-background-size: cover;
@@ -618,7 +618,7 @@ body {
 .wallpaper-appearance-description {
     width: 50%;
     height: 100%;
-    background-image: url(assets/solar-3.png);
+    background-image: url(assets/solar-3.jpg);
     background-position: center center;
     background-repeat: no-repeat; 
     -webkit-background-size: cover;
@@ -635,7 +635,7 @@ body {
 .wallpaper-graphic-description {
     width: 50%;
     height: 100%;
-    background-image: url(assets/solar-4.png);
+    background-image: url(assets/solar-4.jpg);
     background-position: center center;
     background-repeat: no-repeat; 
     -webkit-background-size: cover;
@@ -669,7 +669,7 @@ body {
 
 .calculator-make-flex {
     background-color: black;
-    background-image: url(assets/calculator.png);
+    background-image: url(assets/calculator.jpg);
     background-position: center center;
     background-repeat: no-repeat; 
     -webkit-background-size: cover;
@@ -720,7 +720,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: black;
-    background-image: url(assets/location.png);
+    background-image: url(assets/location.jpg);
     background-position: center center;
     background-repeat: no-repeat; 
     -webkit-background-size: cover;
@@ -757,7 +757,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: black;
-    background-image: url(assets/drag.png);
+    background-image: url(assets/drag.jpg);
     background-position: center center;
     background-repeat: no-repeat; 
     -webkit-background-size: cover;
@@ -860,7 +860,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: black;
-    background-image: url(assets/desktop.png);
+    background-image: url(assets/desktop.jpg);
     background-position: center center;
     background-repeat: no-repeat; 
     -webkit-background-size: cover;
@@ -895,7 +895,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: black;
-    background-image: url(assets/share.png);
+    background-image: url(assets/share.jpg);
     background-position: center center;
     background-repeat: no-repeat; 
     -webkit-background-size: cover;
@@ -935,7 +935,7 @@ body {
 
 .started-container {
     background-color: black;
-    background-image: url(assets/started-background.png);
+    background-image: url(assets/started-background.jpg);
     background-size: cover;
     padding: 4.57rem 0rem 4.57rem 7.14rem;
 }

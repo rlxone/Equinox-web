@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>􀊯</title>
-    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="SFProText-Semibold, SF Pro Text" font-size="15" font-weight="500" letter-spacing="-0.125">
-        <g id="Artboard" transform="translate(-924.000000, -604.000000)" fill="#FFFFFF">
-            <g id="Group-8" transform="translate(908.000000, 593.000000)">
-                <g id="Group" transform="translate(15.500000, 10.000000)">
-                    <text id="􀊯">
-                        <tspan x="0.00463867188" y="14">􀊯</tspan>
-                    </text>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg height="16" viewBox="0 0 20 16" width="20" xmlns="http://www.w3.org/2000/svg"><text style="fill:#fff;fill-rule:evenodd;font-family:SFProText-Semibold, SF Pro Text;font-size:15;font-weight:500;letter-spacing:-.125" transform="translate(-.5 -1)"><tspan x=".004639" y="14">􀊯</tspan></text></svg>
