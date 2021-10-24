@@ -356,6 +356,14 @@ body {
     object-fit: fill;
     border-radius: 0 0 0.7142857143rem 0.7142857143rem;
     aspect-ratio: 1.3073713491;
+    color: #1D1C1D;
+    background-image: url('assets/window-background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     /* aspect-ratio: 1.2288359788; */
     /* display: inline-block; */
 }
