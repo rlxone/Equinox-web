@@ -297,6 +297,7 @@ body {
     right: 0;
     text-align: center;
     font-size: calc(var(--video-width) * 0.03837953092 * 0.35);
+    font-weight: 500;
     cursor: default;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
