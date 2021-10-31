@@ -52,6 +52,26 @@ h3 {
     margin: 0;
 }
 
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+h5 {
+    padding: 0;
+    margin: 0;
+}
+
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
 /* STYLE */
 
 html {
@@ -454,14 +474,14 @@ body {
     padding: 3.43rem 2.29rem;
 }
 
-.wallpaper-flex-solar-content h3 {
+.wallpaper-flex-solar-content p {
     font-size: 1.07rem;
     font-weight: 600;
     letter-spacing: 0.02rem;
     color: #5856D6;
 }
 
-.wallpaper-flex-solar-content h1 {
+.wallpaper-flex-solar-content h2 {
     margin-top: 2.29rem;
     font-size: 2.28rem;
     font-weight: 700;
@@ -469,7 +489,7 @@ body {
     color: white;
 }
 
-.wallpaper-flex-solar-content h2 {
+.wallpaper-flex-solar-content h3 {
     font-size: 1.21rem;
     margin-top: 1.14rem;
     font-weight: 400;
@@ -528,7 +548,7 @@ body {
     background-size: cover;
 }
 
-.wallpaper-solar-duo-flex-content h1 {
+.wallpaper-solar-duo-flex-content h2 {
     font-size: 1.93rem;
     margin-top: 2.57rem;
     font-weight: 700;
@@ -576,7 +596,7 @@ body {
     background-size: cover;
 }
 
-.wallpaper-time-duo-flex-content h1 {
+.wallpaper-time-duo-flex-content h2 {
     font-size: 1.93rem;
     margin-top: 2.57rem;
     font-weight: 700;
@@ -611,7 +631,7 @@ body {
     background-size: cover;
 }
 
-.wallpaper-appearance-duo-flex-content h1 {
+.wallpaper-appearance-duo-flex-content h2 {
     font-size: 1.93rem;
     margin-top: 2.57rem;
     font-weight: 700;
@@ -660,7 +680,7 @@ body {
     background-color: black;
 }
 
-.wallpaper-graphic-duo-flex-content h1 {
+.wallpaper-graphic-duo-flex-content h2 {
     font-size: 1.93rem;
     margin-top: 1.14rem;
     font-weight: 700;
@@ -695,14 +715,14 @@ body {
     height: 100%;
 }
 
-.calculator-make-flex-content h3 {
+.calculator-make-flex-content p {
     font-size: 1.07rem;
     font-weight: 600;
     letter-spacing: 0.02rem;
     color: #FF9500;
 }
 
-.calculator-make-flex-content h1 {
+.calculator-make-flex-content h2 {
     margin-top: 2.29rem;
     font-size: 2.28rem;
     font-weight: 700;
@@ -710,7 +730,7 @@ body {
     color: white;
 }
 
-.calculator-make-flex-content h2 {
+.calculator-make-flex-content h3 {
     font-size: 1.21rem;
     margin-top: 1.14rem;
     font-weight: 400;
@@ -760,7 +780,7 @@ body {
     background-size: cover;
 }
 
-.calculator-location-content h1 {
+.calculator-location-content h2 {
     margin-top: 1.14rem;
     font-size: 1.92rem;
     font-weight: 700;
@@ -797,7 +817,7 @@ body {
     background-size: cover;
 }
 
-.calculator-drag-content h1 {
+.calculator-drag-content h2 {
     margin-top: 1.14rem;
     font-size: 1.92rem;
     font-weight: 700;
@@ -831,7 +851,7 @@ body {
     padding: 3.43rem 2.29rem;
 }
 
-.creation-express-flex-content h3 {
+.creation-express-flex-content p {
     font-size: 1.07rem;
     font-weight: 600;
     letter-spacing: 0.02rem;
@@ -842,7 +862,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.creation-express-flex-content h1 {
+.creation-express-flex-content h2 {
     margin-top: 2.29rem;
     font-size: 2.28rem;
     font-weight: 700;
@@ -850,7 +870,7 @@ body {
     color: white;
 }
 
-.creation-express-flex-content h2 {
+.creation-express-flex-content h3 {
     font-size: 1.21rem;
     margin-top: 1.14rem;
     font-weight: 400;
@@ -888,7 +908,7 @@ body {
     padding: 2.29rem;
 }
 
-.creation-desktop-content h1 {
+.creation-desktop-content h2 {
     font-size: 1.93rem;
     font-weight: 700;
     letter-spacing: 0.02rem;
@@ -935,7 +955,7 @@ body {
     background-size: cover;
 }
 
-.creation-share-content h1 {
+.creation-share-content h2 {
     margin-top: 1.14rem;
     font-size: 1.92rem;
     font-weight: 700;
@@ -955,7 +975,7 @@ body {
     padding: 4.57rem 0rem 4.57rem 7.14rem;
 }
 
-.started-container h1 {
+.started-container h3 {
     color: white;
     font-weight: 900;
     font-size: 2.285rem;
@@ -963,7 +983,7 @@ body {
     padding-top: 2.29rem;
 }
 
-.started-container h2 {
+.started-container h4 {
     color: white;
     font-weight: 400;
     font-size: 1.43rem;
