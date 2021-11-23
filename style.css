@@ -1363,7 +1363,7 @@ body {
 
 @media only screen and (min-width: 769px) {
     :root {
-        --wrapped-width: 90vw;
+        --wrapped-width: 80vw;
     }
 
     .wallpaper-flex {
