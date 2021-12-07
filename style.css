@@ -1017,6 +1017,276 @@ body {
     color: white;
 }
 
+.reviews {
+    background: #111111;
+    padding: 6.5rem 0;
+}
+
+.reviews-container h2 {
+    font-weight: 800;
+    font-size: 2.25rem;
+    color: white;
+}
+
+.reviews .reviews-container:nth-child(2) {
+    margin-top: 4.5714285714rem;
+}
+
+.reviews-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2.3rem;
+}
+
+.reviews-content-app-store {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+}
+
+.reviews-content-reddit {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+}
+
+.reviews-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2.3rem;
+}
+
+.reviews-cards a {
+    aspect-ratio: 1.7777777778;
+    width: 20%;
+}
+
+.reviews-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.reviews-card-reddit img {
+    width: 66%;
+}
+
+.reviews-card-product-hunt img {
+    width: 80%;
+}
+
+.reviews-card-softpedia img {
+    width: 70%;
+}
+
+.reviews-card-ifun img {
+    width: 60%;
+}
+
+.reviews-card-github img {
+    margin-top: 0.5rem;
+    width: 45%;
+}
+
+.reviews-card-github {
+    aspect-ratio: 1.7777777778;
+    width: 20%;
+}
+
+.reviews-card-github div {
+    margin-top: 1rem;
+}
+
+.reviews-card-reddit {
+    background: #FF4500;
+    box-shadow: 0 0.7142857143rem 1.4285714286rem 0 rgba(0,0,0,0.50);
+    border-radius: 0.5714285714rem;
+}
+
+.reviews-card-product-hunt {
+    background: #FFFFFF;
+    box-shadow: 0 0.7142857143rem 1.4285714286rem 0 rgba(0,0,0,0.50);
+    border-radius: 0.5714285714rem;
+}
+
+.reviews-card-softpedia {
+    background: #032983;
+    box-shadow: 0 0.7142857143rem 1.4285714286rem 0 rgba(0,0,0,0.50);
+    border-radius: 0.5714285714rem;
+}
+
+.reviews-card-ifun {
+    background: #D7F3FF;
+    box-shadow: 0 0.7142857143rem 1.4285714286rem 0 rgba(0,0,0,0.50);
+    border-radius: 0.5714285714rem;
+}
+
+.reviews-card-github {
+    background-image: linear-gradient(135deg, #191C22 0%, #201B2A 100%);
+    box-shadow: 0 0.7142857143rem 1.4285714286rem 0 rgba(0,0,0,0.50);
+    border-radius: 0.5714285714rem;
+}
+
+.app-store-review-rating {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.2rem;
+}
+
+.app-store-review-rating-star {
+    background-image: url(assets/star.svg);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 1rem;
+    height: 1rem;
+}
+
+.app-store-review {
+    position: relative;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    width: 33.3%;
+    padding: 1.25rem 1.25rem 5rem 1.25rem;
+}
+
+.reddit-review {
+    position: relative;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    width: 33.3%;
+    padding: 1.25rem 1.25rem 5rem 1.25rem;
+}
+
+.app-store-review h5 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    opacity: 0.5;
+    margin-top: 0.5714285714rem;
+}
+
+.reddit-review h5 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    opacity: 0.5;
+    margin-top: 0;
+}
+
+.app-store-review h4 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    opacity: 0.75;
+    margin-top: 0.5714285714rem;
+    line-height: 1.2857142857rem;
+}
+
+.reddit-review h4 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    opacity: 0.75;
+    margin-top: 0.5714285714rem;
+    line-height: 1.2857142857rem;
+}
+
+.app-store-review h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    opacity: 1;
+    margin-top: 1.1428571429rem;
+}
+
+.app-store-tag {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.57rem;
+    position: absolute;
+    bottom: 1.42rem;
+}
+
+.reddit-tag {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.57rem;
+    position: absolute;
+    bottom: 1.42rem;
+}
+
+.app-store-tag-image {
+    background-image: url(assets/appstore.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 1.4285714286rem;
+    height: 1.4285714286rem;
+}
+
+.reddit-tag-image {
+    background-image: url(assets/reddit.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 1.4285714286rem;
+    height: 1.4285714286rem;
+}
+
+.reddit-review iframe {
+    width: 100%;
+}
+
+.app-store-tag h5 {
+    font-weight: 400;
+    font-size: 0.8571428571rem;
+    color: white;
+    opacity: 1;
+    margin-top: 0;
+    opacity: 0.75;
+}
+
+.reddit-tag h5 {
+    font-weight: 400;
+    font-size: 0.8571428571rem;
+    color: white;
+    opacity: 1;
+    margin-top: 0;
+    opacity: 0.75;
+}
+
 .started {
     background-color: #0D0E11;
     padding: var(--section-padding) 0;
@@ -1358,6 +1628,44 @@ body {
 
     .wallpaper-appearance-duo-flex-content {
         padding-top: 4rem;
+    }
+
+    .app-store-review {
+        width: 100%;
+    }
+
+    .reviews {
+        padding: 6.5rem 1rem;
+    }
+
+    .reviews-content-app-store {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .reddit-review {
+        width: 100%;
+    }
+
+    .reviews-content-reddit {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .reviews-cards {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .reviews-cards a {
+        aspect-ratio: 1.7777777778;
+        width: calc(50% - 0.5rem);
+    }
+
+    .reviews-card-github {
+        aspect-ratio: 1.7777777778;
+        width: calc(50% - 0.5rem);
     }
 
     .started-container {
